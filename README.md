@@ -1,4 +1,4 @@
-a collection of components for our web applications. contains components such as buttons, spinners, modals, tabs, windows, etc.
+a collection of components for our web applications. contains components such as buttons, spinners, modals, tabs, windows, etc .
 
 ## Usage
 
