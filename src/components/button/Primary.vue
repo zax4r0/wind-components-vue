@@ -1,5 +1,5 @@
 <template>
-  <SmartLink
+  <Link
     :to="to"
     :blank="blank"
     class="relative inline-flex items-center justify-center py-2 font-bold transition focus:outline-none focus-visible:bg-accentDark"
@@ -56,13 +56,13 @@
       v-if="loading"
       class="absolute inset-0 flex items-center justify-center"
     >
-      <SmartSpinner />
+      <Spinner />
     </span>
-  </SmartLink>
+  </Link>
 </template>
 
 <script setup lang="ts">
-import { SmartLink, SmartSpinner } from "../smart"
+import { Link, Spinner } from "../smart"
 import type { Component } from "vue"
 
 interface Props {

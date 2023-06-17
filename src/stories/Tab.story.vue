@@ -1,20 +1,20 @@
 <template>
   <Story title="Tab">
     <Variant title="Single">
-      <SmartTabs id="my-tab" v-model="selectedTab" render-inactive-tabs>
-        <SmartTab id="tab1" label="Tab 1">
+      <Tabs id="my-tab" v-model="selectedTab" render-inactive-tabs>
+        <Tab id="tab1" label="Tab 1">
           <h1>Tab 1 content</h1>
-        </SmartTab>
-        <SmartTab id="tab2" label="Tab 2">
+        </Tab>
+        <Tab id="tab2" label="Tab 2">
           <h1>Tab 2 content</h1>
-        </SmartTab>
-      </SmartTabs>
+        </Tab>
+      </Tabs>
     </Variant>
   </Story>
 </template>
 
 <script setup lang="ts">
-import { SmartTabs, SmartTab } from "../components/smart"
+import { Tabs, Tab } from "../components/smart"
 import { ref } from "vue"
 
 const selectedTab = ref("tab1")

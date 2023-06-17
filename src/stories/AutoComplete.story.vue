@@ -1,7 +1,7 @@
 <template>
   <Story title="Auto Complete">
     <div class="h-[50vh]">
-      <SmartAutoComplete
+      <AutoComplete
         placeholder="Select a header"
         :source="commonHeaders"
         :spellcheck="false"
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { SmartAutoComplete } from "../components/smart"
+import { AutoComplete } from "../components/smart"
 import { ref } from "vue"
 
 type GQLHeader = {

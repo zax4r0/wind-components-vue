@@ -1,6 +1,6 @@
 <template>
   <Story title="Modal">
-    <SmartModal
+    <Modal
       :show="show"
       :title="'Modal Title'"
       @hide-modal="show = false"
@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { SmartModal } from "../components/smart"
+import { Modal } from "../components/smart"
 import { ref } from "vue"
 
 const show = ref(true)

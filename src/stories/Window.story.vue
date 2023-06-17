@@ -1,31 +1,31 @@
 <template>
   <Story title="Window">
     <Variant title="Single">
-      <SmartWindows
+      <Windows
         :id="'my-window'"
         v-model="selectedWindow"
         @add-tab="openNewTab"
         @remove-tab="removeTab"
         @sort="sortTabs"
       >
-        <SmartWindow
+        <Window
           v-for="window in tabs"
           :id="window.id"
           :key="'tab_' + window.id"
           :label="window.name"
           :is-removable="window.removable"
         >
-        </SmartWindow>
-      </SmartWindows>
+        </Window>
+      </Windows>
     </Variant>
     <Variant title="Custom Tab Heads">
-      <SmartWindows
+      <Windows
         v-model="selectedWindow"
         @add-tab="openNewTab"
         @remove-tab="removeTab"
         @sort="sortTabs"
       >
-        <SmartWindow
+        <Window
           v-for="window in tabs"
           :id="window.id"
           :key="'tab_' + window.id"
@@ -36,14 +36,14 @@
             <icon-lucide-train class="svg-icons" />
             <span class="truncate w-2"> - Lorem ipsum dolor sit amet</span>
           </template>
-        </SmartWindow>
-      </SmartWindows>
+        </Window>
+      </Windows>
     </Variant>
   </Story>
 </template>
 
 <script setup lang="ts">
-import { SmartWindows, SmartWindow } from "../components/smart"
+import { Windows, Window } from "../components/smart"
 import IconLucideTrain from "~icons/lucide/train"
 import { ref } from "vue"
 

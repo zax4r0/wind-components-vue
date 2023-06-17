@@ -1,5 +1,5 @@
 <template>
-  <SmartLink
+  <Link
     :to="to"
     :exact="exact"
     :blank="blank"
@@ -21,16 +21,16 @@
       :class="label ? (reverse ? 'ml-2' : 'mr-2') : ''"
     />
     {{ label }}
-  </SmartLink>
+  </Link>
 </template>
 
 <script lang="ts">
-import SmartLink from "./Link.vue"
+import Link from "./Link.vue"
 import { Component, defineComponent, PropType } from "vue"
 
 export default defineComponent({
   components: {
-    SmartLink,
+    Link,
   },
   props: {
     to: {

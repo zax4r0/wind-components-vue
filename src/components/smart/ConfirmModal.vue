@@ -1,5 +1,5 @@
 <template>
-  <SmartModal
+  <Modal
     v-if="show"
     dialog
     :title="confirm ?? t?.('modal.confirm') ?? 'Confirm'"
@@ -29,13 +29,13 @@
         />
       </span>
     </template>
-  </SmartModal>
+  </Modal>
 </template>
 
 <script setup lang="ts">
 import { inject } from "vue"
 import { ButtonPrimary, ButtonSecondary } from "../button"
-import { SmartModal } from "."
+import { Modal } from "."
 import { UIPluginOptions, HOPP_UI_OPTIONS } from "./../../plugin"
 
 const { t } = inject<UIPluginOptions>(HOPP_UI_OPTIONS) ?? {}

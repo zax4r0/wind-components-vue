@@ -1,9 +1,9 @@
 <template>
   <Story title="Spinner">
-    <SmartSpinner />
+    <Spinner />
   </Story>
 </template>
 
 <script setup lang="ts">
-import { SmartSpinner } from "../components/smart"
+import { Spinner } from "../components/smart"
 </script>

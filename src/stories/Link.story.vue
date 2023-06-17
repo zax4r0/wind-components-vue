@@ -1,18 +1,18 @@
 <template>
   <Story title="Link">
     <Variant title="Text Link">
-      <SmartLink :to="link" :blank="true"> Click here </SmartLink>
+      <Link :to="link" :blank="true"> Click here </Link>
     </Variant>
     <Variant title="Button Link">
-      <SmartLink :to="link" :blank="true">
+      <Link :to="link" :blank="true">
         <ButtonPrimary label="Click here" />
-      </SmartLink>
+      </Link>
     </Variant>
   </Story>
 </template>
 
 <script setup lang="ts">
-import { SmartLink } from "../components/smart"
+import { Link } from "../components/smart"
 import { ButtonPrimary } from "../components/button"
 import { ref } from "vue"
 

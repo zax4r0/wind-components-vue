@@ -1,5 +1,5 @@
 <template>
-  <SmartLink
+  <Link
     :to="to"
     :exact="exact"
     :blank="blank"
@@ -54,12 +54,12 @@
         </kbd>
       </div>
     </span>
-    <SmartSpinner v-else />
-  </SmartLink>
+    <Spinner v-else />
+  </Link>
 </template>
 
 <script setup lang="ts">
-import { SmartLink, SmartSpinner } from "../smart"
+import { Link, Spinner } from "../smart"
 import type { Component } from "vue"
 
 interface Props {

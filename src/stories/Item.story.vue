@@ -1,11 +1,11 @@
 <template>
   <Story title="Item">
     <Variant title="Single">
-      <SmartItem :label="'Item'" :active-info-icon="false" />
+      <Item :label="'Item'" :active-info-icon="false" />
     </Variant>
   </Story>
 </template>
 
 <script setup lang="ts">
-import { SmartItem } from "../components/smart"
+import { Item } from "../components/smart"
 </script>

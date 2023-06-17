@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <SmartRadio
+    <Radio
       v-for="(radio, index) in radios"
       :key="`radio-${index}`"
       :value="radio.value"
@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { SmartRadio } from "."
+import { Radio } from "."
 
 const emit = defineEmits<{
   (e: "update:modelValue", value: string): void

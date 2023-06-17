@@ -1,5 +1,5 @@
 <template>
-  <SmartLink
+  <Link
     :to="to"
     :exact="exact"
     :blank="blank"
@@ -33,7 +33,7 @@
         ]"
       />
     </span>
-    <SmartSpinner v-else class="mr-4 text-secondaryDark" />
+    <Spinner v-else class="mr-4 text-secondaryDark" />
     <div
       class="inline-flex items-start flex-1 truncate"
       :class="{ 'flex-col': description }"
@@ -60,18 +60,18 @@
         {{ key }}
       </kbd>
     </div>
-  </SmartLink>
+  </Link>
 </template>
 
 <script lang="ts">
-import SmartLink from "./Link.vue"
-import SmartSpinner from "./Spinner.vue"
+import Link from "./Link.vue"
+import Spinner from "./Spinner.vue"
 import { defineComponent } from "vue"
 
 export default defineComponent({
   components: {
-    SmartLink,
-    SmartSpinner,
+    Link,
+    Spinner,
   },
   props: {
     to: {

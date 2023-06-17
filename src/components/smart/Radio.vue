@@ -1,5 +1,5 @@
 <template>
-  <SmartItem
+  <Item
     :label="label"
     :icon="selected ? IconCircleDot : IconCircle"
     :active="selected"
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { SmartItem } from "."
+import { Item } from "."
 import IconCircleDot from "~icons/lucide/circle-dot"
 import IconCircle from "~icons/lucide/circle"
 

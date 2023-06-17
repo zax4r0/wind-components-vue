@@ -1,17 +1,17 @@
 <template>
   <Story title="Radio">
     <Variant title="Single">
-      <SmartRadio />
+      <Radio />
     </Variant>
     <Variant title="Group">
-      <SmartRadioGroup :radios="radios" :model-value="selected" />
+      <RadioGroup :radios="radios" :model-value="selected" />
     </Variant>
   </Story>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue"
-import { SmartRadio, SmartRadioGroup } from "../components/smart"
+import { Radio, RadioGroup } from "../components/smart"
 
 const selected = ref("option1")
 const radios = [
